@@ -2,11 +2,13 @@
 Machine learning model to predict loan default risk using Random Forest with under sampling to hand class imbalance 
 
 ## Overview
-Built a machine learning model to predict whether a loan applicant 
-is likely to default using Random Forest on real banking data.
+Built a machine learning model to predict whether a loan applicant is likely to default using Random Forest on real banking data.
 
 ## Tools Used
-Python, pandas, scikit-learn
+Python, pandas, scikit-learn, matplotlib
+
+## Features
+Age, credit amount, duration, job
 
 ## Approach
 - Handled missing values in Saving accounts and Checking account
@@ -15,11 +17,10 @@ Python, pandas, scikit-learn
 - Built Random Forest classifier
 - Extracted feature importance to identify key default drivers
 
-## Results
-- Accuracy: 0.59
-- Precision: 0.57
-- Recall: 0.66
-- F1 Score: 0.61
+## Model performance
+- Accuracy: 0.67
+- Precision (defaulters): when model flagged someone as likely to default, was correct 39% of time.
+- Recall (defaulters): the model correctly identified 20% of actual defaulters
 
 ## Key Finding
 Top predictors of default were credit amount, loan duration, 
